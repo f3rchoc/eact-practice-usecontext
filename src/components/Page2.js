@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
-import { DataContext } from '../context/DataContext';
+import React from 'react';
+import { useDataContext } from '../context/DataContext';
 import { ButtonChangeData } from './ButtonChangeData';
 
 export const Page2 = () => {
 
-    const { data } = useContext(DataContext)
+    const { data } = useDataContext()
 
     return (
         <div>

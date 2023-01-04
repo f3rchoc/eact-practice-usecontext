@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
-import { DataContext } from '../context/DataContext'
+import React from 'react'
+import { useDataContext } from '../context/DataContext'
 
 export const Page1 = () => {
 
-    const { data } = useContext(DataContext)
+    const { data } = useDataContext()
 
     return (
         <div>

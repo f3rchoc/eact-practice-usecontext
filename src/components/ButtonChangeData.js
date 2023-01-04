@@ -1,9 +1,9 @@
-import React,  {useContext} from 'react';
-import { DataContext } from '../context/DataContext';
+import React from 'react';
+import { useDataContext } from '../context/DataContext';
 
 export const ButtonChangeData = () => {
 
-  const {setData} = useContext(DataContext)
+  const {setData} = useDataContext()
 
   return <button onClick={setData}>Set Data</button>
 };
